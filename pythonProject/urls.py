@@ -30,8 +30,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('heritage/', views.heritage, name='heritage'),
     path('list_of_sights/', views.list_of_sights, name='list_of_sights'),
-
-
+    path('about/', views.about, name='about'),
+    path('contact/', views.contact, name='contact'),
+    path('make_plan/', views.make_plan, name='make_plan'),
 
 
     path('ahsan_manjil/', views.ahsan_manjil, name='ahsan_manjil'),
@@ -44,7 +45,7 @@ urlpatterns = [
     path('signin', views.handleSignin, name='handleSignin'),
     path('contact_us', views.handleContact_us, name='handleContact_us'),
     path('reset_with_mail/', views.reset_with_mail, name='reset_with_mail'),
-
+    path('profile_page/', views.profile_page, name='profile_page'),
     path('logout', views.handleLogout, name='handleLogout'),
     # path('new_pass/', views.new_pass, name='new_pass'),
     path('password_change', views.PasswordChangeView.as_view(template_name="registration/password_change_form.html"),
