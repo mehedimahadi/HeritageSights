@@ -1,3 +1,10 @@
+class Contact(models.Model):
+    User_id = models.AutoField
+    UserName = models.CharField(max_length=50)
+    Email = models.CharField(max_length=50)
+    Message = models.TextField()
+
+
 class UserProfile(models.Model):
     GENRE_CHOICES = (
         ('Male', 'MALE'),
