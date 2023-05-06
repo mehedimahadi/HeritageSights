@@ -33,14 +33,15 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
     path('make_plan/', views.make_plan, name='make_plan'),
-
+    path('', views.home, name='home'),
 
     path('ahsan_manjil/', views.ahsan_manjil, name='ahsan_manjil'),
     path('lalbagh_fort/', views.lalbagh_fort, name='lalbagh_fort'),
     path('star_mosque/', views.star_mosque, name='star_mosque'),
     path('ramakrishna_mission_temple/', views.ramakrishna_mission_temple, name='ramakrishna_mission_temple'),
     path('signup', views.handleSignup, name='handleSignup'),
-
+    path('sign_in/', views.sign_in, name='sign_in'),
+    path('sign_up/', views.sign_up, name='sign_up'),
 
     path('signin', views.handleSignin, name='handleSignin'),
     path('contact_us', views.handleContact_us, name='handleContact_us'),
